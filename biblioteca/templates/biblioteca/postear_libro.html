@@ -1,0 +1,13 @@
+<div>
+      <h1><a href="/">Biblioteca</a></h1>
+  </div>
+
+  {% for post in posts %}
+      <div>
+          <p>Titulo: {{ post.isbn }}</p>
+          <h1><a href="">{{ post.titlulo }}</a></h1>
+          <img src="/media/{{ post.portada }}" width="150px" heigth="150px"/>
+          <p>autor: {{ post.autor }}</p>
+          <p>Editorial: {{ post.editorial }}</p>
+      </div>
+  {% endfor %}
